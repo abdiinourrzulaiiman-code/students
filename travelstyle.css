@@ -1,0 +1,555 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    background:#0b1f3a;
+    color:white;
+    padding:20px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h1{
+    color:#ffcc00;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffcc00;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('https://picsum.photos/1400/800');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero-text h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#ffcc00;
+    color:black;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* ABOUT */
+
+.about{
+    padding:80px 50px;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+/* DESTINATIONS */
+.destinations{
+    padding:80px 50px;
+    background:rgb(238, 237, 245);
+}
+
+.destinations h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+/* GRID (KANAA XALKA DHAMMAAN PROBLEMS 🔥) */
+.cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+/* CARD */
+.card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* IMAGE */
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* TEXT */
+.card h3{
+    margin:15px;
+}
+
+.card p{
+    margin:0 15px 10px;
+}
+
+/* PRICE */
+.price-box{
+    margin:10px 0;
+}
+
+.price{
+    font-size:22px;
+    font-weight:bold;
+    color:#ff6600;
+}
+
+.per{
+    font-size:14px;
+    color:gray;
+}
+
+/* BUTTON */
+.card-btn{
+    display:inline-block;
+    margin-bottom:15px;
+    padding:10px 20px;
+    background:#ff6600;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.card-btn:hover{
+    background:#e65c00;
+}
+
+.stars {
+    color: gold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* SERVICES */
+
+.services{
+    padding:80px 50px;
+    background:#ffffff;
+}
+
+.services h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#0b1f3a;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.service{
+    background:white;
+    width:320px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.4s;
+}
+
+.service:hover{
+    transform:translateY(-10px);
+    background:#0b1f3a;
+    color:white;
+}
+
+.service h3{
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+.service p{
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+/* BUTTON */
+
+.service-btn{
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:#ffcc00;
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.service-btn:hover{
+    background:white;
+    color:#0b1f3a;
+}
+
+/* GALLERY */
+
+.gallery{
+    padding:80px 50px;
+    background:white;
+}
+
+.gallery h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.gallery-images{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.gallery-images img{
+    width:300px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.gallery-images img:hover{
+    transform:scale(1.05);
+}
+
+/* BOOKING */
+
+.booking{
+    padding:80px 50px;
+}
+
+.booking h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+form input,
+form select{
+    padding:15px;
+    border:none;
+    border-radius:5px;
+}
+
+form button{
+    padding:15px;
+    background:#0b1f3a;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+form button:hover{
+    background:#ffcc00;
+    color:black;
+}
+
+/* VIDEO */
+
+.video{
+    padding:80px 50px;
+    text-align:center;
+    background:white;
+}
+
+.video h2{
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:80px 50px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#3d217e;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:20px;
+    }
+
+    .hero-text h2{
+        font-size:40px;
+    }
+
+}
+.video {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.video h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.video video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+/* CONTACT */
+
+.contact{
+    padding:100px 50px;
+
+    background:
+    linear-gradient(rgba(11,31,58,0.9),
+    rgba(11,31,58,0.9)),
+    url('view2.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    text-align:center;
+
+    color:white;
+}
+
+.contact h2{
+    font-size:45px;
+    margin-bottom:50px;
+    color:#ffcc00;
+}
+
+/* CONTACT BOX */
+
+.contact-box{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+/* CONTACT CARD */
+
+.contact-card{
+    background:rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+    width:300px;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    transition:0.4s;
+
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.contact-card:hover{
+    transform:translateY(-10px) scale(1.03);
+
+    background:#ffcc00;
+
+    color:black;
+}
+
+.contact-card h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.contact-card p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+/* BOOTSTRAP SUPPORT */
+
+.container{
+    max-width:1200px;
+}
+
+.row{
+    margin:0;
+}
+
+.col-md-4{
+    display:flex;
+    justify-content:center;
+}
+
+.form-control,
+.form-select{
+    padding:15px;
+    border-radius:5px;
+}
+
+.btn-dark{
+    background:#0b1f3a;
+    border:none;
+}
+
+.btn-dark:hover{
+    background:#ffcc00;
+    color:black;
+}
+
+.g-4{
+    row-gap:25px;
+}
+
+.w-100{
+    width:100%;
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 10px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+/* Facebook */
+.social-icons .fb {
+    background-color: #0671fd;
+}
+
+/* Instagram */
+.social-icons .ig {
+    background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
+}
+
+/* Hover effect */
+.social-icons a:hover {
+    transform: scale(1.2);
+}
