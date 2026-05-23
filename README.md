@@ -4,7 +4,7 @@ I am a Computer Science student who enjoys building software projects and improv
 
 This profile contains academic projects, practice work, and personal experiments in coding.
 
-#CONTANT 
+# contant 
 
 emaail: apdinuur421@email.com
 
